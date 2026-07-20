@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+
+# Runtime output from training/MD/descriptor scripts (regenerated when you run them)
+RESULTS/
+runs/
+# Runtime-extracted training data under trajectory_to_dataset/ specifically -- NOT
+# datasets/experimental/DATA_EXP/, which holds tracked .zip archives.
+/molecular_dynamics/trajectory_to_dataset/DATA_EXP/
+/molecular_dynamics/trajectory_to_dataset/DATA_EXP_*/
+
+# Compiled PLUMED plugin build artifacts (JIT-compiled at runtime, not needed as tracked files)
+*.o
+*.so

@@ -1,0 +1,26 @@
+name: cu-deepmd-jax
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - numpy
+  - matplotlib
+  - scikit-learn      # only needed for datasets/descriptors/ (t-SNE step)
+  - pip:
+      - ase==3.27.0
+      - jax            # pin jax/jaxlib to match your cluster's CUDA version, e.g.:
+      - jaxlib          #   pip install "jax[cuda12]" -- see https://docs.jax.dev/en/latest/installation.html
+      - deepmd-jax      # https://github.com/deepmodeling/deepmd-jax
+
+# PLUMED is a separate, non-pip system dependency, needed ONLY for
+# molecular_dynamics/coexistence/ (the melting-point/interface-pinning method). It is not
+# installable via pip. Install via conda-forge:
+#     conda install -c conda-forge plumed
+# or build from source: https://www.plumed.org/doc-master/user-doc/html/_installation.html
+# Also requires ASE's PLUMED calculator (bundled with ase, used via ase.calculators.plumed.Plumed).
+
+# NOTE: in the original project, the descriptor/t-SNE pipeline (datasets/descriptors/) was run
+# in its own separate environment (mainly to isolate scikit-learn from the JAX/CUDA stack). A
+# single combined environment is used here for simplicity; split it back out if you hit
+# dependency conflicts between JAX and scikit-learn on your system.
