@@ -34,7 +34,7 @@ Format: JSON list of records, each with per-configuration coordinates, atom coun
 
 ## Derived training data
 
-`Cu_DATA.zip` — the same configurations re-exported into DeePMD-kit raw/set format (see
+`Cu_DATA.zip` — the same configurations re-exported into DeePMD-JAX raw/set format (see
 [`../README.md`](../README.md)), one folder per system under `pbc/` (`Cu10`, `Cu105`, ...,
 `Cu1_expanded`, `Cu2_expanded`). This project's own re-processing, not on Zenodo. Unzip here
 (`Cu_DATA/pbc/...`) before pointing `<DATA_ROOT>` at this folder.

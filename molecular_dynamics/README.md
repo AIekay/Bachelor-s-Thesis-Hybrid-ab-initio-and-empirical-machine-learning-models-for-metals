@@ -6,7 +6,7 @@ Jobs included here (unlike `training_scripts/`).
 molecular_dynamics/
 ├── solid/                  Bulk solid Cu NPT MD (example: 800K)
 ├── liquid/                 Bulk liquid Cu NPT MD (example: 1800K)
-├── trajectory_to_dataset/   MD trajectory → DeePMD-kit training data
+├── trajectory_to_dataset/   MD trajectory → DeePMD-JAX training data
 └── coexistence/             PLUMED interface-pinning melting-point MD (1200/1300/1400K)
 ```
 

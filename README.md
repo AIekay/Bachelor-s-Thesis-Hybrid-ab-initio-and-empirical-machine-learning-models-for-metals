@@ -1,9 +1,10 @@
 # Cu DeePMD-JAX: ab initio + experimentally-informed interatomic potentials
 
 Code skeleton for the bachelor thesis **"Hybrid ab initio and empirical machine learning models
-for the potential energy surface of simple metals"** — MLIPs for copper trained with
-[DeePMD-JAX](https://github.com/deepmodeling/deepmd-jax). Real model checkpoints and training logs,
-plus genericized scripts (cluster paths/usernames replaced with placeholders).
+for the potential energy surface of simple metals"** — machine-learned interatomic potentials for
+copper trained with [DeePMD-JAX](https://github.com/deepmodeling/deepmd-jax). Real model
+checkpoints and training logs, plus genericized scripts (cluster paths/usernames replaced with
+placeholders).
 
 ## Structure
 

@@ -19,7 +19,7 @@ Released model: 10,000,000 steps, ~4h52m on 1 GPU (`models/abinit/model/model_ab
 
 ## Data
 
-`<DATA_ROOT>/Cu_DATA/pbc/<System>/` in DeePMD-kit raw/set format — see
+`<DATA_ROOT>/Cu_DATA/pbc/<System>/` in DeePMD-JAX raw/set format — see
 [`../../datasets/ab_initio/README.md`](../../datasets/ab_initio/README.md).
 
 ## How to run

@@ -40,7 +40,7 @@ generated from each generation's own MD via
 | `DATA_EXP/DATA_EXP_HYB1.zip` | `hyb2` | `hyb1` |
 | `DATA_EXP/DATA_EXP_HYB2.zip` | `hyb3` | `hyb2` |
 
-Each unzips to a `DATA_EXP/` folder of `DATA_EXP_<T>K/` subfolders (DeePMD-kit `type.raw` +
+Each unzips to a `DATA_EXP/` folder of `DATA_EXP_<T>K/` subfolders (DeePMD-JAX `type.raw` +
 `set.000/*.npy`). Unzip the one matching the generation you want to train and point
 `<DATA_ROOT>/DATA_EXP` at it.
 

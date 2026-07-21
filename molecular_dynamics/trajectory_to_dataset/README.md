@@ -1,7 +1,7 @@
 # Trajectory → training dataset
 
 Converts a raw MD trajectory (`.xyz`, from [`../solid/`](../solid/README.md) or
-[`../liquid/`](../liquid/README.md)) into DeePMD-kit raw/set format + a density `observable.raw`,
+[`../liquid/`](../liquid/README.md)) into DeePMD-JAX raw/set format + a density `observable.raw`,
 at `<DATA_ROOT>/DATA_EXP/DATA_EXP_<T>K/` (expected by
 [`../../training_scripts/hybrid/train_hybrid.py`](../../training_scripts/hybrid/train_hybrid.py)).
 
